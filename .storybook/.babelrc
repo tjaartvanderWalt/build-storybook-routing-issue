@@ -1,0 +1,25 @@
+/*
+  This .babelrc file is intended for storybook. By default storybook will use the .babelrc file in the root.
+  We needed to add ["@babel/plugin-proposal-class-properties", { "loose": true }] to get storybook to work and did not want to add this config to
+  the main .babelrc file used for production builds. If Storybook detects a .babelrc in the /.storybook folder it will use this instead.
+*/
+{
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-syntax-dynamic-import"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // Exclude transforms that make all code slower
+        "exclude": ["transform-typeof-symbol"],
+        // https://babeljs.io/blog/2020/03/16/7.9.0#babel-preset-env-s-bugfixes-option-11083-https-githubcom-babel-babel-pull-11083
+        "bugfixes": true
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ]
+}

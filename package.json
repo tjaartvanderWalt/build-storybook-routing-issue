@@ -1,0 +1,51 @@
+{
+  "name": "storybook-example",
+  "version": "0",
+  "author": "Tjaart van der Walt",
+  "description": "Example of `build-storybook` output not working as expected",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "build-storybook": "build-storybook -c .storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.6",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",    
+    "@storybook/addon-a11y": "6.0.21",
+    "@storybook/addon-actions": "6.0.21",
+    "@storybook/addon-docs": "6.0.21",
+    "@storybook/addon-viewport": "6.0.21",
+    "@storybook/core": "6.0.21",
+    "@storybook/react": "6.0.21",
+    "@types/react": "16.8.20",
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "8.0.6",
+    "babel-plugin-react-docgen": "4.1.0",
+    "chromatic": "5.0.0-alpha.4",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.13.0",
+    "eslint-plugin-react-hooks": "4.0.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-element-to-jsx-string": "14.1.0",
+    "react-loadable": "5.5.0",
+    "typescript": "3.7.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "resolutions": {
+    "react": "16.8.6"
+  }
+}
